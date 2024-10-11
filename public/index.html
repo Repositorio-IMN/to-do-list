@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio de despesas domesticas</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script type="module" src="js/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section>
+            <h1 class="title-ChallengeExpense">Desafio despesas domesticas</h1>
+        </section>
+    </header>
+    <main>
+        <section class="modal" id="expenseModal">
+            <article class="container">
+                <h2 class="title-modal">Adicionar despesa</h2>
+                <form class="form-modal">
+                    <span class="close">&times;</span>
+                    <label for="description">Descrição</label>
+                    <input type="text" name="description" class="description" required>
+                    <label for="value">Valor</label>
+                    <input type="number" name="value" class="value" required>
+                    <button type="submit" class="button-add">Adicionar</button>
+                </form>
+            </article>
+        </section>
+    </main>
+    <aside class="content-expense">
+        <section class="container">
+            <p class="title-expense"></p>
+            <p class="description-expense"></p>
+            <p class="value-expense"></p>
+        </section>
+    </aside>
+    <footer>
+        <button class="To-add-new-expense">+</button>
+        <button class="add-expenses">Somar despesas</button>
+    </footer>
+</body>
+
+</html>
