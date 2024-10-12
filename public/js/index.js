@@ -1,9 +1,8 @@
 import FieldExpense from "./services/openFieldsModal.js";
-import DescriptionExpense from "./models/descriptionExpense.js";
+import AddConteinerTask from "./services/addConteinerTask.js";
 
 const fieldExpense = new FieldExpense();
-const descriptionExpense = new DescriptionExpense();
+const addConteinerTask = new AddConteinerTask();
 
 fieldExpense.initEvents();
-
-descriptionExpense.initEvents();
+addConteinerTask.initEvents();

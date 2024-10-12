@@ -7,39 +7,35 @@
     <title>Desafio de despesas domesticas</title>
     <link rel="stylesheet" href="css/style.css">
     <script type="module" src="js/index.js" defer></script>
+    <script type="module" src="/public/js/models/addNewTask.js"></script>
 </head>
 
 <body>
     <header>
         <section>
-            <h1 class="title-ChallengeExpense">Desafio despesas domesticas</h1>
+            <h1 class="title-todo-list">Gestão de tarefas</h1>
         </section>
     </header>
     <main>
         <section class="modal" id="expenseModal">
             <article class="container">
-                <h2 class="title-modal">Adicionar despesa</h2>
+                <h2 class="title-modal">Adicionar tarefa</h2>
                 <form class="form-modal">
                     <span class="close">&times;</span>
-                    <label for="description">Descrição</label>
-                    <input type="text" name="description" class="description" required>
-                    <label for="value">Valor</label>
-                    <input type="number" name="value" class="value" required>
+                    <label for="task">Tarefa</label>
+                    <input type="text" name="task" class="input-task" required>
                     <button type="submit" class="button-add">Adicionar</button>
                 </form>
             </article>
         </section>
     </main>
-    <aside class="content-expense">
+    <aside class="content-to-do-list">
         <section class="container">
-            <p class="title-expense"></p>
-            <p class="description-expense"></p>
-            <p class="value-expense"></p>
+            <span class="container-task"></span>
         </section>
     </aside>
     <footer>
-        <button class="To-add-new-expense">+</button>
-        <button class="add-expenses">Somar despesas</button>
+        <button class="To-add-new-task">+</button>
     </footer>
 </body>
 

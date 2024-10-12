@@ -1,7 +1,7 @@
 export default class FieldExpense {
     constructor() {
         this.modal = document.querySelector('.modal');
-        this.openModalButton = document.querySelector('.To-add-new-expense');
+        this.openModalButton = document.querySelector('.To-add-new-task');
         this.closeModalButton = document.querySelector('.close');
         this.initEvents();
     }
